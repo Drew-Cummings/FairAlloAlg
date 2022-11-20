@@ -1,7 +1,5 @@
 import namegenerator
 import random
-from itertools import cycle
-
 
 utilities = [
 "Artichoke",
@@ -145,17 +143,6 @@ def initialize(num_persons,num_utilities,utility_list):
 
 
 
-# def create_ratings(people,utilities_chosen):
-
-#     rating_list = []
-
-#     for i in people:
-#         for j in utilities_chosen:
-#           rating = random.randrange(-10,10)
-#           rating_list.append(rating)
-#     return rating_list
-
-
 
 def preprocessing(utilities_chosen):
     res = dict()
@@ -168,8 +155,6 @@ def preprocessing(utilities_chosen):
 def final_preprocessing(num_person,num_utilities,utility_list):
     people,utilities_chosen = initialize(num_person,num_utilities,utility_list)
 
-#rating_list = create_ratings(people,utilities_chosen)
-
     preprocessing_final = {}
     for i in people:
 
@@ -180,5 +165,8 @@ def final_preprocessing(num_person,num_utilities,utility_list):
 
 
 
-
-final_preprocessing(3,1,utilities)
+# an example of the function call youll need to make
+#THIS IS THE ONLY FUNCTION CALL YOU SHOULD NEED TO MAKE FOR PRE PROCESSING
+#final_processing(number of people, number of utilities, the full utility list)
+#Example: 
+#final_preprocessing(5,50,utilities)
