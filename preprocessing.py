@@ -161,8 +161,7 @@ def final_preprocessing(num_person,num_utilities,utility_list):
         utility_ratings = preprocessing(utilities_chosen)
         preprocessing_final[i] = utility_ratings
 
-    print(preprocessing_final)
-    return preprocessing_final,utilities_chosen
+    return utilities_chosen, preprocessing_final
 
 
 # an example of the function call youll need to make
